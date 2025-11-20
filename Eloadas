@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voltmérő és áramvezetés folyadékokban</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; background-color: #f0f0f0; line-height: 1.6; }
+        h1 { text-align: center; margin-bottom: 24px; }
+        .grid { display: flex; flex-wrap: wrap; gap: 20px; }
+        main { flex: 2 1 600px; }
+        aside { flex: 1 1 300px; }
+        .card { background: #fff; padding: 16px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        .section-title { font-size: 1.2em; margin-bottom: 6px; }
+        .diagram { background: #e0e0e0; padding: 12px; text-align: center; border-radius: 6px; margin-top: 6px; }
+        .note { font-style: italic; color: #555; }
+        footer { text-align: center; margin-top: 18px; color: #333; }
+        ul { margin-top: 6px; }
+    </style>
+</head>
+<body>
+    <h1>Voltmérő és áramvezetés folyadékokban</h1>
+    <div class="grid">
+        <main class="card">
+            <section>
+                <h2 class="section-title">Feszültségmérés</h2>
+                <p>A feszültséget két pont között mérjük; a voltmérőt párhuzamosan kapcsoljuk a vizsgált fogyasztóval, hogy a műszer a feszültséget mutassa.</p>
+                <div class="diagram" aria-hidden>Kapcsolási vázlat (voltmérő párhuzamosan)</div>
+            </section>
+            <section style="margin-top:14px">
+                <h2 class="section-title">Ideális voltmérő</h2>
+                <p>Az ideális voltmérőnek végtelen nagy a belső ellenállása, így alig vesz el áramot és pontosan méri a feszültséget.</p>
+                <ul>
+                    <li>Valódi műszerek nagy, de véges belső ellenállással rendelkeznek.</li>
+                    <li>A mérési pontosság javul, ha a műszer belső ellenállása sokkal nagyobb, mint a vizsgált fogyasztóé.</li>
+                </ul>
+            </section>
+            <section style="margin-top:14px">
+                <h2 class="section-title">Áramvezetés folyadékokban</h2>
+                <p>A tiszta desztillált víz, alkohol vagy olaj általában nem vezeti az áramot; ionok jelenléte teszi vezetővé az oldatot.</p>
+                <p class="note">Elektrolitok = ionokat tartalmazó oldatok (sók, savak, bázisok vizes oldatai).</p>
+                <p style="margin-top:10px">A kísérletben az elektródák különböző mélységig történő merítése és az oldat vezetőképessége befolyásolja a mért áramot.</p>
+            </section>
+            <section style="margin-top:14px">
+                <h2 class="section-title">Gyakorlati megjegyzés</h2>
+                <p>A multiméterek többféle mérésre alkalmasak (feszültség, áram, ellenállás). A mérési tartományt a beállítás határozza meg.</p>
+            </section>
+        </main>
+
+        <aside class="card" aria-labelledby="tips">
+            <h3 id="tips" class="section-title">Rövid vázlat</h3>
+            <p style="margin:6px 0">Voltmérő párhuzamosan; ideális: nagy belső ellenállás; elektrolitok ionjai vezetik az áramot; elektródamélység számít.</p>
+            
+            <h3 class="section-title" style="margin-top:12px">Kísérleti kép</h3>
+            <div class="diagram">Fotó: tápegység, elektródák, zöld oldat</div>
+            
+            <h3 class="section-title" style="margin-top:12px">Letöltés</h3>
+            <p class="muted" style="color:var(--muted)">Kérsz-e HTML fájlt, vagy szeretnéd React-komponensként?</p>
+        </aside>
+    </div>
+
+    <footer class="card" style="margin-top:18px">Oldal készítve: rövid oktatási összefoglaló. Szükség esetén testre szabom, több nyelv vagy több részletes magyarázat hozzáadható.</footer>
+</body>
+</html>
